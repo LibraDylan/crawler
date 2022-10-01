@@ -20,7 +20,7 @@ if __name__ == '__main__':
             for tag in tags:
                 f1.write('{0}\t{1}\n'.format(tag[0], int(tag[1]*1000)))
 
-        font = r'C:\\Users\\yudliang\\Documents\\Python Scripts\\simfang.ttf'
+        font = r'C:\\Users\\dylan\\Documents\\Python Scripts\\simfang.ttf'
         wc = WordCloud(font_path=font, background_color='White', max_words = 50, width=600, height=800)
         with open('word.txt','r')as f2:
             wc.generate(f2.read())
